@@ -1,11 +1,16 @@
+import java.util.*;
+
 
 public class loops {
     public static void main(String args[]) {
-        for (int counter = 0; counter < 3; counter = counter + 1) {
-            System.out.println("Hello i am Ridham");
-
-
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int i=1;
+        i < 11;
+        i++){
+            System.out.println(i * n);
         }
 
     }
+
 }
