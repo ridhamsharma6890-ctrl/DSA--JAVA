@@ -2,19 +2,14 @@ import java.util.*;
 
 public class Strings {
     public static void main(String args[]) {
-StringBuilder sb = new StringBuilder("Ridham");
-System.out.println(sb);
+        String str = "Ridham";
+        String reversed = "";
 
-// printing character at indexes
-        System.out.println(sb.charAt(0));
+        for(int i = str.length() - 1; i >=0; i--){
+        reversed = reversed + str.charAt(i);
 
-        // inserting character at indexes
-      sb.setCharAt(0,'p');
-      System.out.println(sb);
-
-      // Deleting extra characters
-        sb.delete(2,3);
-        System.out.println(sb);
     }
+System.out.println(reversed);
 
+}
     }
