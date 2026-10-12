@@ -1,29 +1,27 @@
-class Pen {
+class Calculator {
 
-    String color;
-    String type;
-
-    public void write() {
-        System.out.println("Writing Something");
-    }
-        public void printColor() {
-            System.out.println(this.color);
-
-        }
+    int add(int a, int b) {
+        return a + b;
     }
 
-public class oops {
-public static void main(String args[]){
-    Pen pen1 = new Pen();
-    pen1.color = "blue";
-    pen1.type = "gel";
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
 
-    Pen pen2 = new Pen();
-    pen2.color = "black";
-    pen2.type = "ball";
+    double add(double a, double b) {
+        return a + b;
+    }
 
-    pen1.printColor();
-    pen2.printColor();
+    public static void main(String[] args) {
 
+        Calculator c = new Calculator();
+
+        System.out.println(c.add(2, 3));
+        System.out.println(c.add(2, 3, 4));
+        System.out.println(c.add(2.5, 3.5));
+    }
 }
-}
+// Here we called 3 add() methods.
+// so compile time ----> overloading
+// same method name + different parameters = Method
+//Overloading = Compile time polymorphism.
