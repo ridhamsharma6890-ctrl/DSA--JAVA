@@ -1,25 +1,28 @@
-class Shape{
-    public void area(){
-        System.out.println("display area");
-    }
-}
-class Triangle extends Shape{
-    public void area(int h, int l){
-        System.out.println(1.0 / 2 * h * l);
-    }
-}
-class EquilateralTriangle extends Triangle{
-    @Override
-    public void area(int h, int l) {
-        System.out.println(1.0 / 2 * l * h);
+class Shape {
+    public void area() {
+        System.out.println("Displays area");
     }
 }
 
-public class inheritance {
-    public static void main(String[] args) {
+class Triangle extends Shape {
+    public void area(int b, int h) {
+        System.out.println(1.0 / 2 * b * h);
+    }
+}
+
+class Circle extends Shape {
+    public void area(int r) {
+        System.out.println(3.14 * r * r);
+    }
+}
+
+class Inheritance {
+    public static void main(String args[]) {
 
         Triangle t = new Triangle();
+        t.area(10, 5);
 
-        t.area();
+        Circle c = new Circle();
+        c.area(5);
     }
 }
